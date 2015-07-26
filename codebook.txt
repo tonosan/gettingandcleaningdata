@@ -2,4 +2,4 @@ Column	Variable	Description
 1	id		Subject Id
 2	activity	Activitiy for which the measuremen was made.
 3	varible		Indicate for which variable the mean measure was computed
-4	mean		Mean for the variable of column 3 for the activity and subject corresponding to columns 2 and 1 respectivly
+4	mean		Mean for the variable of column 3 for the activity and subject corresponding to columns 2 and 1 respectively
