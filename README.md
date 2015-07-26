@@ -1,4 +1,4 @@
-# Course projecto of Getting and cleaning  data 
+# Course project of Getting and cleaning  data 
 This repo contains the final products of the course.
 The run analysis script assume you had downloaded and unzipped the UCI HAR data set in your work directory.
 First set the work directory, second read the data of test and train data sets and concatenat it in one dataframe (test.train),after this, reads the subject id's and activities to add it on the data frame. This covers the step 1 of the project.
