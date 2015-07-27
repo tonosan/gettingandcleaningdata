@@ -1,19 +1,19 @@
-setwd("C:/Users/Posgrado Psicología/Documents/Course project")
+#setwd("C:/Users/Posgrado PsicologÃ­a/Documents/Course project")
 ######Getting data######
-test<-read.table("test/X_test.txt")
-train<-read.table("train/X_train.txt")
+test<-read.table("UCI HAR Dataset/test/X_test.txt")
+train<-read.table("UCI HAR Dataset/train/X_train.txt")
 #######Concatenating test and train data ######
 test.train<-rbind(test,train)
 #######Naming variables######
-var.name<-read.table("features.txt")
+var.name<-read.table("UCI HAR Dataset/features.txt")
 names(test.train)<-var.name$V2
 #######Naming subjects######
-subj.test<-read.table("test/subject_test.txt")
-subj.train<-read.table("train/subject_train.txt")
+subj.test<-read.table("UCI HAR Dataset/test/subject_test.txt")
+subj.train<-read.table("UCI HAR Dataset/train/subject_train.txt")
 id<-c(subj.test$V1,subj.train$V1)
 #######Getting the activities#######
-acti.test<-read.table("test/y_test.txt")
-acti.train<-read.table("train/y_train.txt")
+acti.test<-read.table("UCI HAR Dataset/test/y_test.txt")
+acti.train<-read.table("UCI HAR Dataset/train/y_train.txt")
 activity<-c(acti.test$V1,acti.train$V1)
 test.train<-cbind(id,activity,test.train)
 #######Appropiate labels for activities#######
