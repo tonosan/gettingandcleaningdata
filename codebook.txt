@@ -1,3 +1,5 @@
+This codebook corresponds to tidy.data dataframe which is a long format dataset that summarise data in the Human Activity Recognition Using Smartphones Dataset.
+The treatment of Human Activity Dataset is described in the README file and the run_analysis script contain the managing of the data.
 Column	Variable	Description
 1	id		Subject Id
 2	activity	Activitiy for which the measuremen was made.
